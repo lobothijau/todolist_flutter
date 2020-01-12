@@ -10,21 +10,21 @@
 [![GitHub stars](https://img.shields.io/github/stars/lesnitsky/todolist_flutter.svg?style=social)](https://github.com/lesnitsky/todolist_flutter)
 [![Twitter Follow](https://img.shields.io/twitter/follow/lesnitsky_a.svg?label=Follow%20me&style=social)](https://twitter.com/lesnitsky_a)
 
-This tutorial will walk you through the process of building of a simple todo-list with Flutter
+Tutorial ini akan menjelaskan proses pembuatan aplikasi todo-list sederhana dengan Flutter. 
 
-## Getting started
+## Pendahuluan
 
-Make sure to complete [flutter installation](https://flutter.io/docs/get-started/install)
+Pastikan untuk menyelesaikan [installasi flutter](https://flutter.io/docs/get-started/install)
 
-## First steps
+## Langkah Pertama
 
-Execute in your terminal
+Jalankan perintah berikut di terminal
 
 ```sh
 flutter create todo_list
 ```
 
-First line is an import of `material` library provided by Flutter. This library is an implementation of various android components
+Baris pertama pada kode di bawah akan mengimpor pustaka `material` yang disediakan Flutter. Pustaka ini merupakan implementasi berbagai komponen Material Android. 
 
 📄 lib/main.dart
 
@@ -33,7 +33,7 @@ First line is an import of `material` library provided by Flutter. This library 
 
 ```
 
-This function is an entry point of flutter application. It calls just `runApp`, but we can do more in this function (like making your application full-screen).
+Fungsi di bawah merupakan gerbang utama aplikasi flutter. Saat ini ia hanya berfungsi memanggil fungsi lainnya yaitu `runApp`, tapi kita bisa melakukan banyak hal lainnya (misal, membuat aplikasi menjadi full-screen).
 
 📄 lib/main.dart
 
@@ -44,7 +44,7 @@ This function is an entry point of flutter application. It calls just `runApp`, 
 
 ```
 
-Let's actually do this 😏
+Mari kita lakukan saja (membuat aplikasi full-screen) 😏
 
 📄 lib/main.dart
 
@@ -60,7 +60,7 @@ Let's actually do this 😏
 
 ```
 
-Every component in flutter is called `widget`. It could be either `stateless` (read - pure) or `stateful` (container for some state). Top-level app component should be a stateless components, so let's create one
+Setiap component di flutter disebut dengan `widget`. Ia bisa saja berjenis `stateless` (hanya tampilan) atau `stateful` (memiliki suatu informasi yang bisa berubah). Komponen utama komponen aplikasi harusnya berjenis stateless, jadi mari kita buat komponen tersebut 
 
 📄 lib/main.dart
 
@@ -73,7 +73,7 @@ Every component in flutter is called `widget`. It could be either `stateless` (r
 
 ```
 
-Every widget should override `build` function. It returns a hierarchy of your layout widgets (`Container`, `Padding`, `Flex`, etc) or your `stateful` widgets which contain some business logic
+Setiap widget harus meng-override fungsi `build`. Fungsi ini akan mengembalikan kumpulan widget untuk layout aplikasi yang dibuat (misalnya `Container`, `Padding`, `Flex`, dsb.) atau `stateful` widget yang berisi proses bisnis aplikasi 
 
 📄 lib/main.dart
 
@@ -91,9 +91,9 @@ Every widget should override `build` function. It returns a hierarchy of your la
 
 ```
 
-But in case of top-level App widget, it should return either `CupertinoApp` from `'package:flutter/material.dart'`, or `MaterialApp` from `'package:flutter/material.dart'`
+Untuk kasus top-level App widget (widget yang paling luar), ia sebagiknya mengembalikan `CupertinoApp` dari paket `'package:flutter/material.dart'`, atau `MaterialApp` dari `'package:flutter/material.dart'`
 
-We'll use `material` in this tutorial
+Kita akan gunakan `material` di tutorial ini
 
 📄 lib/main.dart
 
