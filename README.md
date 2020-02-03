@@ -108,7 +108,7 @@ Kita akan gunakan `material` di tutorial ini
 
 ```
 
-Let's add title
+Kemudian kita beri sebuah judul
 
 📄 lib/main.dart
 
@@ -125,9 +125,9 @@ Let's add title
 
 ```
 
-Let's also make a `Scaffold` a home of our application
+Lalu kita tambahkan widget `Scaffold` sebagai komponen home
 
-`Scaffold` is a helper class from `material` library which implements basic app layout (app bar, floating action button)
+`Scaffold` adalah kelas pembantu dari pustaka `material` yang memberikan layout standar yang sering dipakai oleh aplikasi seperti app bar, floating action button, bottom navigation, dsb.
 
 📄 lib/main.dart
 
@@ -143,7 +143,7 @@ Let's also make a `Scaffold` a home of our application
 
 ```
 
-Now we need to add an application header which will display our app title
+Sekarang kita akan menambahkan sebuah header yang berfungsi untuk menampilkan judul aplikasi 
 
 📄 lib/main.dart
 
@@ -158,7 +158,7 @@ Now we need to add an application header which will display our app title
 
 ```
 
-And finally the body of our app is todolist itself. Let's just add this line and implement the class later
+Terakhir kita berikan atur agar bagian body aplikasi ini mengarahkan ke widget bernama `TodoList`. Sekarang memang belum ada widget tersebut, akan kita tambahkan nanti
 
 📄 lib/main.dart
 
@@ -173,9 +173,9 @@ And finally the body of our app is todolist itself. Let's just add this line and
 
 ```
 
-## Render list
+## Me-render list
 
-Basic statefull widget will look like this
+Stateful widget sederhanaa akan terlihat sebagai berikut
 
 📄 lib/todo_list.dart
 
@@ -196,7 +196,7 @@ class _TodoListState extends State<TodoList> {
 
 ```
 
-We also need to import our `TodoList` widget
+Widget `TodoList` tersebut akan kita impor
 
 📄 lib/main.dart
 
@@ -212,7 +212,7 @@ We also need to import our `TodoList` widget
 
 ```
 
-Now let's describe `Todo` entity as class
+Sekarang kita buat sebuah kelas model baru bernama `Todo`
 
 📄 lib/todo.dart
 
@@ -226,7 +226,7 @@ class Todo {
 
 ```
 
-and import it to `TodoList`
+kemudian impor ke dalam `TodoList`
 
 📄 lib/todo_list.dart
 
@@ -239,7 +239,7 @@ and import it to `TodoList`
 
 ```
 
-Now we need to extend our `TodoList` state and add a list of todos
+Selanjutnya kita akan meng-extend state `TodoList` dan menyiapkan sebuah list todo
 
 📄 lib/todo_list.dart
 
@@ -255,7 +255,7 @@ Now we need to extend our `TodoList` state and add a list of todos
 
 ```
 
-Let's use `ListView` to render our todo items.
+Mari gunakan `ListView` untuk menampilkan daftar todo 
 
 📄 lib/todo_list.dart
 
