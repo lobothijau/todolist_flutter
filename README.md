@@ -277,9 +277,9 @@ Mari gunakan `ListView` untuk menampilkan daftar todo
 
 ```
 
-Now we're going to implement `_buildItem` which will be called each time todo has to be rendered
+Sekarang kita akan implementasi method `_buildItem` yang akan dipanggil setiap kali todo akan di render
 
-We'll use `CheckboxListTile` from `material` library as it has everything we need (checkbox indicating whether todo is completed and title)
+Kita akan gunakan `CheckboxListTile` dari pustaka `material` karena widget ini memberikan semua yang kita butuhkan (checkbox menandakan sebuah todo sudah selesai atau belum disertai dengan teks judul)
 
 📄 lib/todo_list.dart
 
